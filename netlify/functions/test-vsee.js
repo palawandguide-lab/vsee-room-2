@@ -3,8 +3,8 @@
 
 const VSEE = {
   endpoint:    'https://api.vseepreview.com/vc/stable/api_v3',
-  altEndpoint: 'https://api-ejc.vseepreview.com/vc/stable/api_v3',
-  accountCode: 'ejc',
+  altEndpoint: 'https://api-edward-joseph.vseepreview.com/vc/stable/api_v3',
+  accountCode: 'edward-joseph',
   apiKey:      '1b36c0c2ae3781ee8415d7cc6dcdb519',
   apiSecret:   'b6c49f58df6aa44639fa0a799a8cc76f',
   adminToken:  '734e3500a0e75fc83d4e97b0860c2faa',
