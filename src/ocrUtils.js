@@ -27,10 +27,10 @@ export function parseIdText(raw) {
   }
 
   // ── DOB ──
-  const dm = full.match(/(?:DOB|DATE\s*OF\s*BIRTH|BORN|BD)[:\s]*(\d{1,2}[\/-]\d{1,2}[\/-]\d{2,4})/i)
-           || full.match(/(\d{2}[\/-]\d{2}[\/-]\d{4})/);
+  const dm = full.match(/(?:DOB|DATE\s*OF\s*BIRTH|BORN|BD)[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})/i)
+           || full.match(/(\d{2}[/-]\d{2}[/-]\d{4})/);
   if (dm) {
-    let [a, b, c] = dm[1].split(/[\/-]/);
+    let [a, b, c] = dm[1].split(/[/-]/);
     if (c.length === 2) c = (parseInt(c) > 50 ? '19' : '20') + c;
     result.dob = a.length === 4
       ? `${a}-${b.padStart(2, '0')}-${c.padStart(2, '0')}`
